@@ -1,3 +1,4 @@
+import { getCustomRepository } from "typeorm";
 import { User } from "../entities/User";
 import { UsersRepositories } from "../repositories/UsersRepositories";
 
@@ -8,8 +9,8 @@ interface IUserService {
 }
 
 class CreateUserService {
-  async execute({name, email, admin}: IUserService): Promise<User> {
-    const usersRepository = new UsersRepositories();
+  async execute({name, email, admin}: IUserService): Promise<User> {    
+    const usersRepository = getCustomRepository(UsersRepositories);
 
     if(!email) {
       throw new Error('Invalid mail.')
