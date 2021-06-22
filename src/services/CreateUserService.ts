@@ -1,13 +1,14 @@
+import { User } from "../entities/User";
 import { UsersRepositories } from "../repositories/UsersRepositories";
 
-interface IUserRequest {
+interface IUserService {
   name: string;
   email: string;
   admin?: boolean;
 }
 
 class CreateUserService {
-  async execute({name, email, admin}: IUserRequest) {
+  async execute({name, email, admin}: IUserService): Promise<User> {
     const usersRepository = new UsersRepositories();
 
     if(!email) {
