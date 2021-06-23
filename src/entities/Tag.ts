@@ -6,7 +6,7 @@ class Tag {
   @PrimaryColumn()
   id: string;
 
-  @Column()
+  @Column({ primary: true  })
   name: string;
   
   @CreateDateColumn()
