@@ -40,3 +40,5 @@ class Compliment {
     if(!this.id) this.id = uuid();
   }
 }
+
+export { Compliment };
