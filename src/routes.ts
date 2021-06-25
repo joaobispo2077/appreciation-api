@@ -21,4 +21,6 @@ router.post('/login', authenticateUserController.handle);
 const createComplimentController = new CreateComplimentController();
 router.post('/compliments', ensureAuthenticated, createComplimentController.handle);
 
+const listUserSendComplimentsController = new ListUserSendComplimentsController();
+router.get('/users/compliments/send', ensureAuthenticated, listUserSendComplimentsController.handle);
 export {router};

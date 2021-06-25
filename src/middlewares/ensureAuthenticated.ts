@@ -23,5 +23,4 @@ export function ensureAuthenticated(req: Request,res: Response, next: NextFuncti
     return res.status(401).end();
   }
 
-
 }
