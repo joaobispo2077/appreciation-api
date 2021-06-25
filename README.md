@@ -15,3 +15,11 @@
   - Não é permitido um usuário cadastrar um elogio para si
   - Não é permitido cadastrar elogios para usuáros inválidos
   - O usuário precisa estar autenticado na aplicação
+
+Milha extra
+-> Enviar email quando um usuário enviar um elogio.
+-> Colocar em produção.
+-> Criar um frontend.
+-> Melhorar arquitetura com SOLID.
+-> Criar erros customizados e um handler de erros.
+-> Trocar banco de sqlite para PostgreSQL.

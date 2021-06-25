@@ -10,9 +10,11 @@
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "@types/cors": "^2.8.10",
     "@types/node": "^15.12.4",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.4.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^8.5.1",
