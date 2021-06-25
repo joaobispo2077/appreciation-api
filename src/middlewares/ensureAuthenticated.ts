@@ -10,8 +10,6 @@ export function ensureAuthenticated(req: Request,res: Response, next: NextFuncti
 
   if(!authToken) return res.status(401).end();
   
-  console.log(authToken);
-
   const [,token] = authToken.split(' ');
 
   try {
